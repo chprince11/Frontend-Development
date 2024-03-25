@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            border: 2px solid black;
+            width: 700px;
+            height: 1000px;
+            background: lightseagreen;
+            position: relative;
+            
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: lightcoral;
+            border: 2px solid black;
+            position: fixed;
+        }
+           
+            .box1{
+                position: absolute;
+                left: 200px;
+                z-index: -1;
+               
+            }
+        
+        .box2{
+            background: lightgreen;
+            position: absolute;
+            top: 0px;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- 
+        There are total 4 different value for the property position:
+        1) static
+        2) Relative - move relative to it's own position
+        3) Absolute - relative to nearest positioned ancestor
+        4) fixed- Position relative to top left corner of browser window
+
+        1-- Static
+        It is html default setting
+    -->
+<div class="parent">
+
+<p class="box box1">Box-1</p>
+<p class="box box2">Box-2</p>
+
+</div>
+  
+    
+</body>
+</html>

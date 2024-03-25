@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float-Layout</title>
+
+    <style>
+
+        header,aside,main,footer{
+            border: 6px solid black;
+            padding: 10px; margin: 10px;
+            text-align: center;
+            font-weight: bolder;
+            font-family: lato, sans-serif;
+        }
+        aside{
+            float: left;
+            width: 25%;
+            height: 70vh;
+        }
+        main{
+            float: right;
+            width: 68%;
+            height: 70vh;
+        }
+
+        footer{
+            clear: both;
+        }
+        header,footer{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Header
+    </header>
+
+    <aside>
+        Sidebar
+    </aside>
+
+    <main>
+        Main Content
+    </main>
+
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>
